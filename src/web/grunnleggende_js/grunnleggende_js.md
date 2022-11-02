@@ -251,6 +251,7 @@ August 7 og ikke 8. Les mer om `Date`
 Samme kan du gjøre med `||` hvis du heller vil sjekke `eller`:
 
 ```js
+navn = "Lars";
 if(mnd === 7 && dato === 10) {
     if(navn === "Lars" || navn === "Lasse") {
         console.log("Gratulerer med navnedagen!");
@@ -262,7 +263,7 @@ if(mnd === 7 && dato === 10) {
 
 Legg merke til her at hvis datoen er `10.8` så hopper du inn til en ny `if/else`
 som sjekker om navnet ditt enten er `Lars` eller `Lasse`. Hvis det er feil dato
-skjer det ingenting.
+skjer det ingenting. Variabelen navn må defineres, ellers får du feilmelding. 
 
 ##
 
@@ -407,7 +408,7 @@ for(var i = 0; i < 10; i++) {
 Eksempel:
 
 ```js
-for(var i = 0; i < 10; i++;) {
+for(var i = 0; i < 10; i++) {
     console.log(i);
 }
 ```
